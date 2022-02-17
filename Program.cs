@@ -9,7 +9,7 @@ namespace Lista_Färger
         {
             Console.WriteLine("En liten färglista");
 
-            List<string> färger = new List<string>();
+            List<string> färger = new List<string>();//Vad händer här?
 
             Console.WriteLine("Du får nu skriva en ett valfritt antal färger. Avsluta körningen med en tom rad");
             string nyFärg = " ";
