@@ -1,26 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Forms0
+namespace Lista_Färger
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            // skapar en lista av strängar
-            var länder = new List<string>();
+            Console.WriteLine("En liten färglista");
 
-            länder.Add("Norge");
-            länder.Add("Danmark");
-            länder.Add("Island");
-            länder.Add("Finland");
-            länder.Add("Grönland");
+            List<string> färger = new List<string>();
 
-            // loopa igenom listelementen med en foreach-loop  
-            foreach (var land in länder)
+            Console.WriteLine("Du får nu skriva en ett valfritt antal färger. Avsluta körningen med en tom rad");
+            string nyFärg = " ";
+            while (nyFärg != "")
             {
-                Console.WriteLine(land);
+                Console.WriteLine("Skriv in en ny färg!");
+                nyFärg = Console.ReadLine();
+
+                färger.Add(nyFärg);
+
             }
+
+            Console.WriteLine("Här är de färger du skrev in");
+            //     färger.Sort(); //sorterar efter bokstavsordning
+
+            foreach (string färg in färger)
+            {
+                Console.WriteLine(färg);
+            }
+
         }
     }
 }
