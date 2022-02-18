@@ -1,34 +1,21 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
-namespace Lista_Färger
+namespace Lista_Heltal
 {
     class MainClass
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("En liten färglista");
+            int heltal = 0;
+            Console.WriteLine("Ange ett heltal:");
+            string tal1 = Console.ReadLine();// tal1 är datatypen string
 
-            List<string> färger = new List<string>();//Vad händer här?
 
-            Console.WriteLine("Du får nu skriva en ett valfritt antal färger. Avsluta körningen med en tom rad");
-            string nyFärg = " ";
-            while (nyFärg != "")
-            {
-                Console.WriteLine("Skriv in en ny färg!");
-                nyFärg = Console.ReadLine();
+            Int32.TryParse(tal1, out heltal);
+            //tal1 (datatypen string) omvandlas till heltal och av datatypen int (och returnerar 0 vid felaktigt format, t.ex 3.5)
 
-                färger.Add(nyFärg);//Vad händer här?
-
-            }
-
-            Console.WriteLine("Här är de färger du skrev in");
-            //     färger.Sort(); //sorterar efter bokstavsordning
-
-            foreach (string färg in färger)
-            {
-                Console.WriteLine(färg);
-            }
+            Console.WriteLine("Nu är jag int..." + heltal);
 
         }
     }
