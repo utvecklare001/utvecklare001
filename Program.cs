@@ -18,7 +18,7 @@ namespace Lista_Färger
                 Console.WriteLine("Skriv in en ny färg!");
                 nyFärg = Console.ReadLine();
 
-                färger.Add(nyFärg);
+                färger.Add(nyFärg);//Vad händer här?
 
             }
 
