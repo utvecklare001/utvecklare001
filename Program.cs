@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Lista_Heltal
+namespace TryparseHeltal
 {
     class MainClass
     {
